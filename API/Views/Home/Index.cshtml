@@ -1,0 +1,14 @@
+﻿@model API.Models.Employee
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div>
+    @using (Html.BeginForm("AddEmployee", "Home"))
+    {
+        @Html.EditorFor(m => m)
+        <input type="submit" value="Add"/>
+    }
+</div>
